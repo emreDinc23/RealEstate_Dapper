@@ -1,9 +1,11 @@
 using RealEstate_Dapper.Models.DapperContext;
 using RealEstate_Dapper.Repositories.CategoryRepositories;
 using RealEstate_Dapper.Repositories.ClientRepositories;
+using RealEstate_Dapper.Repositories.EmployeeRepositories;
 using RealEstate_Dapper.Repositories.OurServicesRepository;
 using RealEstate_Dapper.Repositories.PopulerLocationRepositories;
 using RealEstate_Dapper.Repositories.ProductRepositories;
+using RealEstate_Dapper.Repositories.StatisticsRepositories;
 using RealEstate_Dapper.Repositories.WhoWeAreReporitories;
 using RealEstate_Dapper.Repositories.WhoWeAreServicesRepository;
 
@@ -18,6 +20,9 @@ builder.Services.AddTransient<IWhoWeAreServicesRepository, WhoWeAreServicesRepos
 builder.Services.AddTransient<IOurServicesRepository, OurServicesRepository>();
 builder.Services.AddTransient<IPopulerLocationRepository, PopulerLocationRepostiyory>();
 builder.Services.AddTransient<IClientRepository, ClientRepository>();
+builder.Services.AddTransient<IEmployeeRepository, EmployeeRepository>();
+builder.Services.AddTransient<IStatisticsRepository, StatisticsRepository>();
+
 
 
 

@@ -14,15 +14,15 @@
                     <form method="post">
                         <label>İlan Başlığı</label>
                         <input type="text" asp-for="productTitle" class="form-control" />
-                        <br/>
+                        <br />
                         <label>Şehir</label>
-                        <input type="text" asp-for="productTitle" class="form-control" />
-                        <br/>
+                        <input type="text" asp-for="productCity" class="form-control" />
+                        <br />
                         <label>İlçe</label>
-                        <input type="text" asp-for="productTitle" class="form-control" />
-                        <br/>
+                        <input type="text" asp-for="productDistrict" class="form-control" />
+                        <br />
                         <label>Kategori</label>
-                        <input type="text" asp-for="productTitle" class="form-control" />
+                        <select asp-for="categoryID" asp-items="ViewBag.v" class="form-control"></select>
                         <br />
                         <label>Fiyat</label>
                         <input type="text" asp-for="productPrice" class="form-control" />
@@ -31,19 +31,16 @@
                         <input type="text" asp-for="Type" class="form-control" />
                         <br />
                         <label>Kapak Fotoğrafı</label>
-                        <input type="text" asp-for="productCoverImage" class="form-control" />
+                        <input type="file" asp-for="productCoverImage" class="form-control" />
                         <br />
                         <label>İlan Açık Adresi</label>
-                        <textarea type="text" asp-for="productAdress" rows="5" class="form-control" />
+                        <textarea asp-for="productAdress" rows="5" class="form-control"></textarea>
                         <br />
                         <button class="btn btn-square btn-outline-success m-2" title="Kaydet"><i class="fas fa-check"></i></button>
                     </form>
 
                 </div>
             </div>
-
         </div>
     </div>
 </div>
-
-

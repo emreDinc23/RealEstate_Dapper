@@ -3091,6 +3091,7 @@ input[type="button"].btn-block {
 
 .navbar {
   position: relative;
+  
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -3348,15 +3349,16 @@ input[type="button"].btn-block {
       color: #fff; }
 
 .card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem; }
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
   .card > hr {
     margin-right: 0;
     margin-left: 0; }
@@ -10403,11 +10405,14 @@ nav ul li a:hover {
   opacity: 0.95; }
 
 .w3l-cover-3 .top-bottom {
-  background: url(../images/banner.jpg) no-repeat center center;
-  background-size: cover;
-  min-height: 750px;
-  position: relative;
-  z-index: 1; }
+    
+    background: url(../images/banner.jpg) no-repeat center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+    position: relative;
+    z-index: 1;
+}
 
 .w3l-cover-3 .top-bottom:before {
   content: "";
@@ -11730,10 +11735,10 @@ button.owl-next {
     bottom: 38%; } }
 
 .breadcrumb-bg-about {
-  background-size: cover;
+  background-size: cover;  
   background-image: linear-gradient(to right, rgba(25, 25, 25, 0.7), rgba(0, 0, 0, 0.7)), url(../images/banner.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: center;
+  background-position: top;
   background-attachment: fixed; }
 
 h2.title {
