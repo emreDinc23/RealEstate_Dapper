@@ -1,0 +1,181 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-signal fa-2x text-primary"></i>
+                <div class="ms-3">
+                    <p class="mb-2">Çalışan Sayısı</p>
+                    <h6 class="mb-0">@ViewData["ActiveEmployeeCount"]</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-cogs fa-3x text-primary"></i>
+                <div class="ms-3">
+                    <p class="mb-2">Daire Sayısı</p>
+                    <h6 class="mb-0">@ViewData["ApartmentCount"]</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-chart-area fa-3x text-primary"></i>
+                <div class="ms-3">
+                    <p class="mb-2">Aktif Kategoriler</p>
+                    <h6 class="mb-0">@ViewData["ActiveCategoryCount"]</h6>
+                </div>
+            </div>
+        </div> <div class="col-sm-6 col-xl-3">
+            <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-chart-bar fa-3x text-primary"></i>
+                <div class="ms-3">
+                    <p class="mb-2">Oda Ortalaması</p>
+                    <h6 class="mb-0">@ViewData["AverageRoomCount"]</h6>
+                </div>
+            </div>
+        </div>            
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-chart-line fa-3x text-primary"></i>
+                <div class="ms-3">
+                    <p class="mb-2">Satılık Ortalama</p>
+                    <h6 class="mb-0">@ViewData["AverageProductPriceBySale"]</h6>
+                </div>
+            </div>
+        </div>       
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-chart-pie fa-3x text-primary"></i>
+                <div class="ms-3">
+                    <p class="mb-2">Kiralık Ortalama</p>
+                    <h6 class="mb-0">@ViewData["AverageProductPriceByRent"]</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-tachometer-alt fa-3x text-primary"></i>
+                <div class="ms-3">
+                    <p class="mb-2">Kaç Kategori ?</p>
+                    <h6 class="mb-0">@ViewData["CategoryCount"]</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-globe fa-3x text-primary"></i>
+                <div class="ms-3">
+                    <p class="mb-2">En iyi çalışan</p>
+                    <h6 class="mb-0">@ViewData["EmployeeNameByMaxProductCount"]</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-percent fa-3x text-primary"></i>
+                <div class="ms-3">
+                    <p class="mb-2"> En çok ürün</p>
+                    <h6 class="mb-0">@ViewData["CityNameByMaxProductCount"]</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-bullseye fa-3x text-primary"></i>
+                <div class="ms-3">
+                    <p class="mb-2">Farklı Şehirler</p>
+                    <h6 class="mb-0">@ViewData["DifferentCityCount"]</h6>
+                </div>
+            </div>
+        </div>   <div class="col-sm-6 col-xl-3">
+            <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-globe fa-3x text-primary"></i>
+                <div class="ms-3">
+                    <p class="mb-2">En İyi Kategori</p>
+                    <h6 class="mb-0">@ViewData["CategoryNameByMaxProductCount"]</h6>
+                </div>
+            </div>
+        </div>  
+    <div class="col-sm-6 col-xl-3">
+        <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                <i class="fa fa-poll fa-3x text-primary"></i>
+            <div class="ms-3">
+                    <p class="mb-2">Son Ürün Fİyatı</p>
+                <h6 class="mb-0">@ViewData["LastProductPrice"]</h6>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-xl-3">
+        <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+            <i class="fa fa-chart-pie fa-3x text-primary"></i>
+            <div class="ms-3">
+                    <p class="mb-2">En Yeni Yapı</p>
+                <h6 class="mb-0">@ViewData["NewestBuildingYear"]</h6>
+            </div>
+        </div>
+    </div> 
+    <div class="col-sm-6 col-xl-3">
+        <div class="bg-light rounded d-flex  align-items-center justify-content-between p-4">
+            <i class="fa fa-chart-pie fa-3x text-primary"></i>
+            <div class="ms-3">
+                    <p class="mb-2">En Eski Yapı</p>
+                <h6 class="mb-0">@ViewData["OldestBuildingYear"]</h6>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-xl-3">
+        <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+            <i class="fa fa-chart-pie fa-2x text-primary"></i>
+            <div class="ms-3">
+                    <p class="mb-2">Silinen Kategoriler</p>
+                <h6 class="mb-0">@ViewData["PassiveCategoryCount"]</h6>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-xl-3">
+        <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+            <i class="fa fa-chart-pie fa-3x text-primary"></i>
+            <div class="ms-3">
+                    <p class="mb-2">Ürün Sayısı</p>
+                <h6 class="mb-0">@ViewData["ProductCount"]</h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-sm-12 col-xl-6">
+            <div class="bg-light text-center rounded p-4">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h6 class="mb-0">Worldwide Sales</h6>
+                    <a href="">Show All</a>
+                </div>
+                <canvas id="worldwide-sales"></canvas>
+            </div>
+        </div>
+        <div class="col-sm-12 col-xl-6">
+            <div class="bg-light text-center rounded p-4">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h6 class="mb-0">Salse & Revenue</h6>
+                    <a href="">Show All</a>
+                </div>
+                <canvas id="salse-revenue"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
